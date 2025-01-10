@@ -1,5 +1,11 @@
 # Conventions
 
+## Git
+
+- Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for
+  commit messages.
+- Use a 60 char limit for the first line
+
 ## Python
 
 Interact with python using `uv`:
