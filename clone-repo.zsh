@@ -31,5 +31,8 @@ git init --initial-branch=main
 # Update the README.md to be a single h1 with the name of the repo
 echo "# $repo_name" > README.md
 
+# Delete this clone script from the new repo
+rm clone-repo.zsh
+
 echo "Repository cloned and initialized successfully in $new_repo_dir"
 
