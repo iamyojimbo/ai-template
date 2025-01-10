@@ -1,0 +1,8 @@
+read:
+  - conventions.md
+  - README.md
+
+test-cmd: tests
+lint-cmd:
+  - tests
+  - fmt
