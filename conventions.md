@@ -23,6 +23,8 @@ Interact with python using `uv`:
 - Place all source files in the `src/` dir
 - Always add typehints to function signatures
 - Prefer `list[str]` to `List[str]`
+- Always use absolute imports: i.e. `import src.lib`
+- All scripts should be invoked as modules, i.e: `uv run -m src.main`
 
 ## Logging
 
