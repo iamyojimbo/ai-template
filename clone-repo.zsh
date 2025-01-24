@@ -1,6 +1,16 @@
 #!/bin/zsh
 
-# Does this script also delete the git repo and reinitialise it after copying to the new dir? AI?
+# This script should be SOURCED, not executed directly
+# Usage: source clone-repo.zsh
+# This allows it to change the directory of your current shell session
+
+if [[ "$0" == "$BASH_SOURCE" || "$0" == "$_" ]]; then
+    echo "Error: This script should be sourced, not executed directly"
+    echo "Usage: source clone-repo.zsh"
+    exit 1
+fi
+
+# Does this script also delete the git repo and reinitialize it after copying to the new dir? AI?
 
 # Prompt for a new repo name
 echo "Enter the new repository name:"
