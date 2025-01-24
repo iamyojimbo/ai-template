@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# Does this script also delete the git repo and reinitialise it after copying to the new dir? AI?
+
 # Prompt for a new repo name
 echo "Enter the new repository name:"
 read repo_name
