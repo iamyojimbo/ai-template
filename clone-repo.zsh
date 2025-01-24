@@ -38,3 +38,6 @@ rm clone-repo.zsh
 
 echo "Repository cloned and initialized successfully in $new_repo_dir"
 
+# Change into the new directory
+cd "$new_repo_dir" || exit 1
+
