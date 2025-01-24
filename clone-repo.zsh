@@ -17,9 +17,9 @@ if [ -d "$new_repo_dir" ]; then
     fi
 fi
 
-# Copy this repo to a sibling dir with the new name
-echo "Copying repository to $new_repo_dir..."
-if ! cp -r "$(pwd)" "$new_repo_dir"; then
+# Copy this repo to a sibling dir with the new name, excluding .git directory
+echo "Copying repository to $new_repo_dir (excluding .git)..."
+if ! rsync -a --exclude='.git' "$(pwd)/" "$new_repo_dir"; then
     echo "Error: Failed to copy repository"
     exit 1
 fi
