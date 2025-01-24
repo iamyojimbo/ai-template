@@ -36,6 +36,10 @@ echo "# $repo_name" > README.md
 # Delete this clone script from the new repo
 rm clone-repo.zsh
 
+# Add all files and create initial commit
+git add .
+git commit -m "First"
+
 echo "Repository cloned and initialized successfully in $new_repo_dir"
 
 # Change into the new directory
